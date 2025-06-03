@@ -249,3 +249,76 @@ body {
     vertical-align: middle;
     color: #9F3247;
 }
+
+.categories-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.categories-section h2 {
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #9F3247;
+    padding-bottom: 5%;
+
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 👈 3 colonnes fixes */
+  gap: 30px;
+  justify-content: center;
+  justify-content: center;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.category-card {
+  background-color: #fcf6f7;
+  border: 1px solid #e0dada;
+  text-align: center;
+  padding: 40px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  height: 5rem;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card img {
+  background-color: #9F3247;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 15px;
+  object-fit: cover; /* 🔧 remplira bien le cercle */
+  display: inline-block;
+}
+
+.category-card p {
+  font-weight: 500;
+  color: #333;
+}
+.icon-circle {
+  background-color: #9F3247;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+.icon-circle i {
+  color: white;
+  font-size: 24px;
+}
